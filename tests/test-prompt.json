@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Prompt with name and email",
+    "prompt": "Hi, my name is John Doe and my email is john.doe@example.com. Can you summarize my recent activity?",
+    "expected_redacted": "Hi, my name is [NAME] and my email is [EMAIL]. Can you summarize my recent activity?"
+  },
+  {
+    "description": "Prompt with API key",
+    "prompt": "Please debug this error. I am using the API key: sk-abcdef1234567890",
+    "expected_redacted": "Please debug this error. I am using the API key: [API_KEY]"
+  },
+  {
+    "description": "Safe prompt",
+    "prompt": "What is the capital of France?",
+    "expected_redacted": "What is the capital of France?"
+  },
+  {
+    "description": "Prompt with Phone and Organization",
+    "prompt": "Contact me at 555-123-4567 if Microsoft is down.",
+    "expected_redacted": "Contact me at [PHONE_NUMBER] if [ORG] is down."
+  }
+]
